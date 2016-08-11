@@ -6,3 +6,23 @@
 # In your final submission:
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+
+def cumulative_sum(lst):
+	cu_sum = 0
+	cu_lst = []
+	for num in lst:
+		cu_sum += num
+		cu_lst.append(cu_sum)
+	return cu_lst
+
+def main(): 
+	print(cumulative_sum([1,2,3]))
+	print(cumulative_sum([]))
+	print(cumulative_sum([1,-1,-15, 100]))
+	print(cumulative_sum([0]))
+	
+if __name__ == '__main__':
+	main()
+
+
